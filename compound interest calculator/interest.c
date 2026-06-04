@@ -8,17 +8,17 @@ int main(void)
     float years;
     float result;
 
-    printf("oh so you decided to put your money in a saving account to earn interest? you scummy piece of shit, anyways enter your starting amount\n");
+    printf("Oh so you decided to put your money in a saving account to earn interest? enter your starting amount\n");
     scanf("%f", &p);
 
-    printf("stupid nigger, enter the interest rate\n");
+    printf("Enter the interest rate\n");
     scanf("%f", &rate);
-    rate = rate/100;
+    rate /= 100;
 
-    printf("you could've invested in halal stocks and got halal money and MORE money, enter number of times interest compounded\n");
+    printf("you could've invested in halal stocks and got halal money and MORE money. Enter number of times interest compounded\n");
     scanf("%d", &times);
 
-    printf("for how many years?\n");
+    printf("For how many years?\n");
     scanf("%f", &years);
 
     result = p*pow((1+(rate/times)), times*years);
